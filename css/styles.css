@@ -1,0 +1,233 @@
+:root {
+  --accent-color: #2196f3;
+  --primary-text-color: #757575;
+  --section-text-color: #212121;
+  --primary-white-color: #ffffff;
+  --primary-black-color: #000000;
+  --primary-heder-footer-color: #2f303a;
+  --button-second-color: #188ce8;
+  --button-galery-box: #f5f4fa;
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+}
+
+body {
+  color: var(--primary-text-color);
+  font-family: var(--main-font), sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+/* ===ЛОГОТИП=== */
+.logo {
+  color: var(--primary-black-color);
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+.logo-footer {
+  color: var(--primary-white-color);
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.logo-style {
+  color: var(--accent-color);
+}
+
+.logo:hover,
+.logo:focus,
+.logo-footer:hover,
+.logo-footer:focus {
+  color: var(--accent-color);
+}
+
+/* ===снятие маркировки со всех списков=== */
+.link-ul {
+  list-style: none;
+}
+
+/* ===снятие декорации со всех ссылок=== */
+.link-a-href {
+  text-decoration: none;
+}
+
+/* ===навигация сайта=== */
+.site-nav {
+  color: var(--section-text-color);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+/* ===ссылки навигации черного-цвета - согласно ТЗ=== */
+.site-nav-current,
+.mail-active,
+.phone-active {
+  color: var(--section-text-color);
+}
+.site-nav-current:hover,
+.site-nav-current:focus {
+  color: var(--accent-color);
+}
+
+/* ===хедер контактная информация=== */
+.contact-link .mail-active,
+.contact-phone .phone-active {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+.mail-active:hover,
+.mail-active:focus,
+.phone-active:hover,
+.phone-active:focus {
+  color: var(--accent-color);
+}
+
+/* ===герой=== */
+.hero {
+  background-color: var(--primary-heder-footer-color);
+}
+
+.hero-title {
+  color: var(--primary-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* ===кнопки героя=== */
+.button {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.button:hover,
+.button:focus {
+  color: var(--primary-white-color);
+  background-color: var(--button-second-color);
+}
+
+/* ===стили заголовков и текстов внутри секций=== */
+
+.section-headline {
+  color: var(--section-text-color);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.section-text {
+  line-height: 1.71;
+}
+
+.section-title {
+  color: var(--section-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+/* ===секция про Команду WebStudio=== */
+.section-title-name {
+  color: var(--section-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.section-text-name {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+/* ===галерея-порфолио-страница === */
+.section-title-galery {
+  color: var(--section-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.section-text-galery {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+/* ===кнопки галерея-портфолио-страница=== */
+.button-galery {
+  color: var(--section-text-color);
+  background-color: var(--button-galery-box);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+}
+.button-galery:hover,
+.button-galery:focus {
+  color: var(--primary-white-color);
+  background-color: var(--button-second-color);
+}
+
+/* ===курсор=== */
+.button,
+.button-galery {
+  cursor: pointer;
+}
+
+/* ===футер=== */
+.footer {
+  background-color: var(--primary-heder-footer-color);
+}
+.footer-address {
+  color: var(--primary-white-color);
+}
+.footer-phone,
+.footer-mail {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-address,
+.footer-phone,
+.footer-mail {
+  font-style: normal;
+  text-decoration: none;
+}
+
+.footer-address:hover,
+.footer-address:focus,
+.footer-phone:hover,
+.footer-phone:focus,
+.footer-mail:hover,
+.footer-mail:focus {
+  color: var(--accent-color);
+  text-decoration: none;
+}
