@@ -20,6 +20,24 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* ===геометрия разметки=== */
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.p,
+.ul {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 /* ===ЛОГОТИП=== */
 .logo {
   color: var(--primary-black-color);
@@ -66,15 +84,19 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
+.site-nav .current {
+  color: var(--accent-color);
+}
 
 /* ===ссылки навигации черного-цвета - согласно ТЗ=== */
-.site-nav-current,
+.site-nav,
 .mail-active,
 .phone-active {
   color: var(--section-text-color);
 }
-.site-nav-current:hover,
-.site-nav-current:focus {
+
+.site-nav:hover,
+.site-nav:focus {
   color: var(--accent-color);
 }
 
@@ -231,3 +253,7 @@ body {
   color: var(--accent-color);
   text-decoration: none;
 }
+
+/* бордер герой                     border: 1px solid #ECECEC; */
+/* задний фон картинок блока преимщества              #F5F4FA */
+/* наша команда задний фон                background: #F5F4FA; */
