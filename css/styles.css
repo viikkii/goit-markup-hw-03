@@ -22,7 +22,6 @@ body {
 
 /* ===геометрия разметки=== */
 .h1,
-.h2,
 .h3,
 .h4,
 .h5,
@@ -33,10 +32,33 @@ body {
 }
 
 .container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  outline: 6px solid palevioletred;
+}
+.hero,
+.footer {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  outline: 2px solid palevioletred;
+}
+
+.section {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+/* section-nav
+section-li
+section-photo
+section-team
+section-partner */
 
 /* ===ЛОГОТИП=== */
 .logo {
@@ -46,6 +68,11 @@ body {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+  width: 145px;
+  margin-left: 215px;
+  margin-bottom: 100px;
+  margin-right: 93px;
+  margin-top: 24px;
 }
 .logo-footer {
   color: var(--primary-white-color);
@@ -126,7 +153,6 @@ body {
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
 }
 
 /* ===кнопки героя=== */
