@@ -20,23 +20,74 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* ===геометрия разметки=== */
-.h1,
-.h3,
-.h4,
-.h5,
-.h6,
-.p,
-.ul {
-  margin: 0;
+/* ===ГЕОМЕТРИЯ РАЗМЕТКИ=== */
+
+/* ===сброс настроек=== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  outline: 6px solid palevioletred;
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
+
+img {
+  display: block;
+}
+
+/* ===контейнер div общий=== */
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid palevioletred;
+}
+
+/* РАСПОЛОЖЕНИЕ ХЕДЕРА */
+.header-container,
+.section-item,
+.contact-info {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 93px;
+}
+
+.contact-link {
+  margin-left: 305px;
+  margin-right: 30px;
+}
+.contact-phone {
+  margin-right: 0;
+}
+.section-nav:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .hero,
 .footer {
   display: flex;
@@ -46,19 +97,91 @@ body {
   outline: 2px solid palevioletred;
 }
 
-.section {
+/* .hero,
+.footer {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  outline: 2px solid palevioletred;
+}
+
+.section-item {
   display: flex;
   flex-direction: row;
   width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-right: 215px;
+  padding-left: 215px;
+  margin-left: 20px;
+  margin-right: 20px;
+  align-items: center;
 }
 
-/* section-nav
-section-li
-section-photo
-section-team
-section-partner */
+.section-nav:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/* .comand-fon {
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.section-team {
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-left: 30px;
+} */
+
+/* .contact-link,
+.contact-phone {
+  
+  space-beetwen
+} */
+
+/* .headline-text {
+  padding: 10px;
+} */
+
+/* .section-li {
+  width: 270px;
+  height: 251px;
+  justify-content: space-around;
+} */
+/* 
+.section > .section-nav,
+.section > .contact-link,
+.section > .contact-phone,
+.section > .section-li,
+.section > .section-photo,
+.section > .section-team,
+.section > .section-partner,
+.section > .section-footer {
+  outline: 1px solid teal;
+}
+
+.section * {
+  outline: 1px solid teal;
+}
+
+/*  сетка */
+/* .section > .section-photo {
+  flex-basis: calc(100% / 3 -20px);
+}
+
+.section > .section-li,
+.section > .section-team {
+  flex-basis: calc(100% / 4 -20px);
+}
+
+.section > .section-partner {
+  flex-basis: calc(100% / 6 -20px);
+}
+*/
+/* */
 
 /* ===ЛОГОТИП=== */
 .logo {
@@ -68,11 +191,6 @@ section-partner */
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
-  width: 145px;
-  margin-left: 215px;
-  margin-bottom: 100px;
-  margin-right: 93px;
-  margin-top: 24px;
 }
 .logo-footer {
   color: var(--primary-white-color);
@@ -199,6 +317,10 @@ section-partner */
 }
 
 /* ===секция про Команду WebStudio=== */
+.comand-fon {
+  background-color: var(--button-galery-box);
+}
+
 .section-title-name {
   color: var(--section-text-color);
   font-weight: 500;
