@@ -186,10 +186,11 @@ img {
 
 .section-item-footer {
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.logo-style {
-  padding-top: 60px;
+.logo-footer {
+  margin-bottom: 20px;
 }
 
 .section-footer {
