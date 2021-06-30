@@ -154,7 +154,7 @@ img {
   text-transform: uppercase;
   letter-spacing: 0.06em;
   width: 696px;
-  padding-bottom: 15px;
+  margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -173,7 +173,6 @@ img {
   width: 200px;
   border-radius: 4px;
   border: none;
-  margin-top: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -243,10 +242,16 @@ img {
 /* ===НАШИ ПРЕИМУЩЕСТВА */
 .visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
+  padding: 0;
+  border: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .section-li {
